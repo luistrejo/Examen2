@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddRestaurant">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="REGISTRO DEL RESTAURANTE"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imgVwFotografia"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="center"
+        app:srcCompat="@drawable/barrafina" />
+
+    <LinearLayout
+
+        android:id="@+id/llForm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingVertical="46dp">
+
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="300dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_redondo"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Nombre del restaurante"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLength="30" />
+
+        <EditText
+            android:id="@+id/etDesc"
+            android:layout_width="300dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_redondo"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Descripcion breve"
+            android:imeOptions="actionNext"
+            android:inputType="textShortMessage"
+            android:maxLength="30" />
+
+        <EditText
+            android:id="@+id/etDir"
+            android:layout_width="300dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_redondo"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Direccion"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoComplete"
+            android:maxLength="30" />
+
+        <EditText
+            android:id="@+id/etTel"
+            android:layout_width="300dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_redondo"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="Telefono"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLength="30" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+        <Button
+
+            android:id="@+id/Rregistration"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/boton_redondo"
+            android:onClick="OnClickRegistrar"
+            android:text="Registrar"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:ignore="InvalidId">
+
+        </ProgressBar>
+
+    </LinearLayout>
+
+
+</LinearLayout>
